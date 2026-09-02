@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alto Studio — Work</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/work.css" />
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- NAVIGATION                                 -->
+    <!-- ========================================== -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+    <img src="images/Alto PNG.png" alt="Alto Studio" class="logo-image" />
+</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- FULL-SCREEN MENU                           -->
+    <!-- ========================================== -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-overlay-inner">
+            <div class="menu-system">
+                <span class="menu-system-label">ALTO_Studio</span>
+                <span class="menu-system-label">EST. 2026</span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" class="menu-link">HOME</a></li>
+                <li><a href="studio.html" class="menu-link">STUDIO</a></li>
+                <li><a href="services.html" class="menu-link">SERVICES</a></li>
+                <li><a href="work.html" class="menu-link">WORK</a></li>
+                <li><a href="contact.html" class="menu-link">CONTACT</a></li>
+            </ul>
+            <div class="menu-footer">
+                <span class="menu-footer-label">DIGITAL EXPERIENCE STUDIO</span>
+                <span class="menu-footer-label">SCROLL TO EXPLORE</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SECTION 01: WORK INTRODUCTION              -->
+    <!-- ========================================== -->
+    <section class="work-intro" id="work-intro">
+        <div class="work-intro-bg">
+            <div class="work-intro-gradient"></div>
+            <div class="work-intro-noise"></div>
+        </div>
+
+        <div class="work-intro-container">
+            <div class="work-intro-meta">
+                <span class="work-intro-label">ALTO_Studio</span>
+                <span class="work-intro-label">PROJECT ARCHIVE</span>
+                <span class="work-intro-label">2026</span>
+            </div>
+
+            <div class="work-intro-content">
+                <h1 class="work-intro-title">
+                    <span class="work-intro-line">SELECTED</span>
+                    <span class="work-intro-line work-intro-accent">WORK</span>
+                </h1>
+                <p class="work-intro-text">
+                    Digital experiences, identities, and platforms created through design,
+                    technology, and experimentation.
+                </p>
+            </div>
+
+            <div class="work-intro-scroll">
+                <span class="work-intro-scroll-label">SCROLL TO EXPLORE</span>
+                <div class="work-intro-scroll-line">
+                    <div class="work-intro-scroll-progress"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 02: FILTER SYSTEM                  -->
+    <!-- ========================================== -->
+    <section class="work-filter-section" id="work-filter">
+        <div class="container">
+            <div class="work-filter-container">
+                <button class="work-filter-btn active" data-filter="all">ALL</button>
+                <button class="work-filter-btn" data-filter="branding">BRANDING</button>
+                <button class="work-filter-btn" data-filter="web">WEB</button>
+                <button class="work-filter-btn" data-filter="applications">APPLICATIONS</button>
+                <button class="work-filter-btn" data-filter="experimental">EXPERIMENTAL</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 03: PROJECT SHOWCASE               -->
+    <!-- ========================================== -->
+    <section class="work-projects" id="work-projects">
+
+        <!-- PROJECT 01 — Nova Brand -->
+        <div class="work-project" data-category="branding">
+            <div class="work-project-container">
+                <div class="work-project-image">
+                    <div class="work-project-image-inner">
+                        <img src="images/W01.jpg" alt="Nova Brand - Brand Identity" />
+                    </div>
+                </div>
+                <div class="work-project-info">
+                    <span class="work-project-number">01</span>
+                    <span class="work-project-category">Brand Identity</span>
+                    <h3 class="work-project-name">Nova Brand</h3>
+                    <p class="work-project-desc">
+                        Visual identity for a future-forward tech company exploring
+                        the intersection of AI and human creativity.
+                    </p>
+                    <span class="work-project-year">2026</span>
+                    <a href="nova-brand.html" class="work-project-link">VIEW CASE →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 02 — Studio Luxe -->
+        <div class="work-project" data-category="web">
+            <div class="work-project-container work-project-reverse">
+                <div class="work-project-image">
+                    <div class="work-project-image-inner">
+                        <img src="images/W02.jpg" alt="Studio Luxe - Web Experience" />
+                    </div>
+                </div>
+                <div class="work-project-info">
+                    <span class="work-project-number">02</span>
+                    <span class="work-project-category">Web Experience</span>
+                    <h3 class="work-project-name">Studio Luxe</h3>
+                    <p class="work-project-desc">
+                        Premium website for a luxury architecture firm, featuring
+                        immersive project galleries and editorial storytelling.
+                    </p>
+                    <span class="work-project-year">2026</span>
+                    <a href="studio-luxe.html" class="work-project-link">VIEW CASE →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 03 — FieldFlow -->
+        <div class="work-project" data-category="applications">
+            <div class="work-project-container">
+                <div class="work-project-image">
+                    <div class="work-project-image-inner">
+                        <img src="images/W03.jpg" alt="FieldFlow - Mobile Application" />
+                    </div>
+                </div>
+                <div class="work-project-info">
+                    <span class="work-project-number">03</span>
+                    <span class="work-project-category">Mobile Application</span>
+                    <h3 class="work-project-name">FieldFlow</h3>
+                    <p class="work-project-desc">
+                        Cross-platform app for field operations management,
+                        designed for efficiency and ease of use in the field.
+                    </p>
+                    <span class="work-project-year">2025</span>
+                    <a href="fieldflow.html" class="work-project-link">VIEW CASE →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 04 — EcoChain -->
+        <div class="work-project" data-category="web">
+            <div class="work-project-container work-project-reverse">
+                <div class="work-project-image">
+                    <div class="work-project-image-inner">
+                        <img src="images/W04.jpg" alt="EcoChain - Digital Platform" />
+                    </div>
+                </div>
+                <div class="work-project-info">
+                    <span class="work-project-number">04</span>
+                    <span class="work-project-category">Digital Platform</span>
+                    <h3 class="work-project-name">EcoChain</h3>
+                    <p class="work-project-desc">
+                        Sustainability platform for supply chain transparency,
+                        connecting brands with ethical suppliers worldwide.
+                    </p>
+                    <span class="work-project-year">2025</span>
+                    <a href="ecochain.html" class="work-project-link">VIEW CASE →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 05 — Morph Studio -->
+        <div class="work-project" data-category="experimental">
+            <div class="work-project-container">
+                <div class="work-project-image">
+                    <div class="work-project-image-inner">
+                        <img src="images/W05.jpg" alt="Morph Studio - Experimental Lab" />
+                    </div>
+                </div>
+                <div class="work-project-info">
+                    <span class="work-project-number">05</span>
+                    <span class="work-project-category">Experimental Lab</span>
+                    <h3 class="work-project-name">Morph Studio</h3>
+                    <p class="work-project-desc">
+                        Interactive design experiment exploring the relationship
+                        between motion, code, and user perception.
+                    </p>
+                    <span class="work-project-year">2025</span>
+                    <a href="morph-studio.html" class="work-project-link">VIEW CASE →</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 04: FINAL STATEMENT                -->
+    <!-- ========================================== -->
+    <section class="work-statement" id="work-statement">
+        <div class="work-statement-container">
+            <div class="work-statement-content">
+                <span class="work-statement-label">ALTO_Studio</span>
+                <h2 class="work-statement-title">
+                    WE BUILD DIGITAL EXPERIENCES<br />
+                    <span class="work-statement-accent">THAT OUTLIVE TRENDS.</span>
+                </h2>
+                <div class="work-statement-line"></div>
+                <a href="contact.html" class="btn-primary">
+                    START A PROJECT
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+    <img src="images/Alto PNG.png" alt="Alto Studio" class="logo-image" />
+</a>
+                    <p class="footer-tagline">DIGITAL EXPERIENCE STUDIO</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <span class="footer-col-label">STUDIO</span>
+                        <ul>
+                            <li><a href="studio.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <span class="footer-col-label">CONNECT</span>
+                        <ul>
+                            <li><a href="mailto:Desgin@AltoStudio.co.za">Email</a></li>
+                     <li><a href="https://x.com/altostudiosa" target="_blank" rel="noopener noreferrer">X</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span class="footer-system">ALTO_Studio</span>
+                <span class="footer-copy">© 2026 — All rights reserved.</span>
+                <span class="footer-system">SCROLL TO EXPLORE</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS                                    -->
+    <!-- ========================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+    </script>
+    <script src="js/work.js">
+    </script>
+</body>
+</html>

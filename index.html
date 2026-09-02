@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========================================== -->
+    <!-- PRIMARY SEO METADATA                       -->
+    <!-- ========================================== -->
+    <title>Alto Studio — Digital Experience Studio | Web Design & Development</title>
+    <meta name="description" content="Alto Studio is a creative technology studio specialising in graphic design, web development, and app development. We build digital experiences that resonate." />
+    <meta name="keywords" content="web design, web development, app development, graphic design, digital experience, creative technology, branding, UX/UI, Johannesburg" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.altoStudio.co/" />
+
+    <!-- ========================================== -->
+    <!-- OPEN GRAPH / SOCIAL SHARING               -->
+    <!-- ========================================== -->
+    <meta property="og:title" content="Alto Studio — Digital Experience Studio" />
+    <meta property="og:description" content="We build what others imagine. Creative technology studio specialising in web, app, and graphic design." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.altoStudio.co/" />
+    <meta property="og:image" content="https://www.altoStudio.co/images/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Alto Studio — Digital Experience Studio" />
+    <meta name="twitter:description" content="We build what others imagine. Creative technology studio specialising in web, app, and graphic design." />
+
+    <!-- ========================================== -->
+    <!-- FONTS & CSS                               -->
+    <!-- ========================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ========================================== -->
+    <!-- FAVICON                                   -->
+    <!-- ========================================== -->
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- NAVIGATION                                 -->
+    <!-- ========================================== -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Alto Studio Home">
+                <img src="images/Alto PNG.png" alt="Alto Studio" class="logo-image" />
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- FULL-SCREEN MENU                           -->
+    <!-- ========================================== -->
+    <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Main navigation menu">
+        <div class="menu-overlay-inner">
+            <div class="menu-system">
+                <span class="menu-system-label">ALTO_Studio</span>
+                <span class="menu-system-label">EST. 2026</span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" class="menu-link">HOME</a></li>
+                <li><a href="studio.html" class="menu-link">STUDIO</a></li>
+                <li><a href="services.html" class="menu-link">SERVICES</a></li>
+                <li><a href="work.html" class="menu-link">WORK</a></li>
+                <li><a href="contact.html" class="menu-link">CONTACT</a></li>
+            </ul>
+            <div class="menu-footer">
+                <span class="menu-footer-label">DIGITAL EXPERIENCE STUDIO</span>
+                <span class="menu-footer-label">SCROLL TO EXPLORE</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SECTION 00: HERO                           -->
+    <!-- ========================================== -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-noise"></div>
+            <div class="hero-visual">
+                <div class="hero-visual-grid"></div>
+                <div class="hero-visual-geometry">
+                    <div class="hero-visual-line"></div>
+                    <div class="hero-visual-line"></div>
+                    <div class="hero-visual-line"></div>
+                    <div class="hero-visual-line"></div>
+                </div>
+                <div class="hero-visual-accent"></div>
+                <div class="hero-visual-glow"></div>
+                <div class="hero-visual-marker"></div>
+            </div>
+        </div>
+
+        <div class="hero-container">
+            <!-- System Boot -->
+            <div class="hero-system" id="heroSystem">
+                <span class="hero-system-line">ALTO_Studio</span>
+                <span class="hero-system-line">DIGITAL EXPERIENCE STUDIO</span>
+                <span class="hero-system-line hero-cursor">INITIALIZING...</span>
+            </div>
+
+            <!-- Main Statement -->
+            <div class="hero-content" id="heroContent">
+                <h1 class="hero-title" id="hero-title">
+                    <span class="hero-line hero-line-1">WE BUILD</span>
+                    <span class="hero-line hero-line-2">WHAT OTHERS</span>
+                    <span class="hero-line hero-line-3">IMAGINE.</span>
+                </h1>
+
+                <p class="hero-sub">
+                    <span class="hero-sub-word">IMAGINE.</span>
+                    <span class="hero-sub-word hero-sub-accent">BUILD.</span>
+                    <span class="hero-sub-word">TRANSFORM.</span>
+                </p>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="hero-scroll">
+                <span class="hero-scroll-label">SCROLL TO EXPLORE</span>
+                <div class="hero-scroll-line">
+                    <div class="hero-scroll-progress"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FEATURED PRODUCT: COORDINATE               -->
+    <!-- ========================================== -->
+    <section class="coordinate-feature" id="coordinate" aria-labelledby="coordinate-title">
+
+        <div class="container">
+
+            <div class="coordinate-feature-header">
+
+                <div class="coordinate-feature-meta">
+                    <span class="coordinate-kicker">ALTO PRODUCT / 001</span>
+
+                    <h2 class="coordinate-feature-title" id="coordinate-title">
+                        Our latest product.
+                    </h2>
+                </div>
+
+                <div class="coordinate-feature-intro">
+                    <p>
+                        Coordinate is a workplace coordination platform designed
+                        to bring teams, activity and visibility into one connected space.
+                    </p>
+
+                    <a href="coordinate.html" class="coordinate-learn">
+                        LEARN MORE
+                        <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="coordinate-media">
+
+                <picture>
+                    <!-- PHONE ONLY -->
+                    <source
+                        media="(max-width: 767px)"
+                        srcset="images/cc-mobile.png"
+                    />
+
+                    <!-- DESKTOP + TABLET -->
+                    <img
+                        src="images/cc-desktop.png"
+                        alt="Coordinate workplace coordination app by Alto Studio"
+                        class="coordinate-promo-image"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                </picture>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 01: STATEMENT                      -->
+    <!-- ========================================== -->
+    <section class="statement" id="statement" aria-labelledby="statement-title">
+        <div class="container">
+            <div class="statement-grid">
+                <div class="statement-meta">
+                    <span class="section-number">01</span>
+                    <span class="section-label">THE STUDIO</span>
+                </div>
+                <div class="statement-content">
+                    <h2 class="statement-title" id="statement-title">
+                        We're a creative technology studio<br />
+                        <span class="statement-title-accent">building digital experiences</span>
+                    </h2>
+                    <p class="statement-text">
+                        Alto Studio is where creative thinking meets technical execution.
+                        We design and build websites, applications, and visual identities
+                        that don't just function—they resonate.
+                    </p>
+                    <a href="studio.html" class="btn-secondary" style="margin-top: 32px;">
+                        LEARN MORE
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 02: SERVICES                       -->
+    <!-- ========================================== -->
+    <section class="services" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="services-header">
+                <span class="section-number">02</span>
+                <span class="section-label">WHAT WE DO</span>
+                <h2 class="services-title" id="services-title">
+                    Three pillars.<br />
+                    <span class="services-title-accent">One vision.</span>
+                </h2>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-pillar">
+                    <div class="service-pillar-inner">
+                        <span class="service-pillar-number">001</span>
+                        <span class="service-pillar-category">DESIGN</span>
+                        <h3 class="service-pillar-name">Graphic Design</h3>
+                        <p class="service-pillar-desc">
+                            Visual identities, branding, and design systems
+                            that tell your story with clarity and character.
+                        </p>
+                        <div class="service-pillar-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                <rect x="2" y="2" width="28" height="28" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M10 10 L22 10" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M10 16 L20 16" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M10 22 L18 22" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="24" cy="22" r="3" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="service-pillar-border"></div>
+                        <div class="service-pillar-bg"></div>
+                    </div>
+                </article>
+
+                <article class="service-pillar">
+                    <div class="service-pillar-inner">
+                        <span class="service-pillar-number">002</span>
+                        <span class="service-pillar-category">WEB</span>
+                        <h3 class="service-pillar-name">Web Development</h3>
+                        <p class="service-pillar-desc">
+                            Immersive websites and platforms built with
+                            precision, performance, and purpose.
+                        </p>
+                        <div class="service-pillar-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                <rect x="2" y="6" width="28" height="22" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M2 12 L30 12" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="6" cy="9" r="1.5" fill="currentColor"/>
+                                <circle cx="12" cy="9" r="1.5" fill="currentColor"/>
+                                <circle cx="18" cy="9" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="service-pillar-border"></div>
+                        <div class="service-pillar-bg"></div>
+                    </div>
+                </article>
+
+                <article class="service-pillar">
+                    <div class="service-pillar-inner">
+                        <span class="service-pillar-number">003</span>
+                        <span class="service-pillar-category">APP</span>
+                        <h3 class="service-pillar-name">App Development</h3>
+                        <p class="service-pillar-desc">
+                            Native and cross-platform applications that
+                            deliver seamless experiences on every device.
+                        </p>
+                        <div class="service-pillar-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                <rect x="8" y="2" width="16" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="16" cy="24" r="2" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M12 6 L20 6" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="service-pillar-border"></div>
+                        <div class="service-pillar-bg"></div>
+                    </div>
+                </article>
+            </div>
+
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="services.html" class="btn-secondary">
+                    VIEW ALL SERVICES
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 03: HORIZONTAL JOURNEY             -->
+    <!-- ========================================== -->
+    <section class="horizontal-section" id="horizontal" aria-label="Service journey showcase">
+        <div class="horizontal-wrapper">
+            <div class="horizontal-track" id="horizontalTrack">
+                <div class="horizontal-panel" style="background-image: url('images/001.png');">
+                    <div class="horizontal-panel-overlay"></div>
+                    <div class="horizontal-panel-content">
+                        <span class="panel-number">001</span>
+                        <h2 class="panel-title">We design<br />brand identities.</h2>
+                        <p class="panel-desc">From logos to complete visual systems—we craft identities that stand out.</p>
+                        <span class="panel-tag">BRAND</span>
+                    </div>
+                </div>
+                <div class="horizontal-panel" style="background-image: url('images/002.png');">
+                    <div class="horizontal-panel-overlay"></div>
+                    <div class="horizontal-panel-content">
+                        <span class="panel-number">002</span>
+                        <h2 class="panel-title">We build<br />digital experiences.</h2>
+                        <p class="panel-desc">Websites and platforms that engage, convert, and leave a lasting impression.</p>
+                        <span class="panel-tag">WEB</span>
+                    </div>
+                </div>
+                <div class="horizontal-panel" style="background-image: url('images/003.png');">
+                    <div class="horizontal-panel-overlay"></div>
+                    <div class="horizontal-panel-content">
+                        <span class="panel-number">003</span>
+                        <h2 class="panel-title">We create<br />applications.</h2>
+                        <p class="panel-desc">Native and cross-platform apps that feel native, perform flawlessly.</p>
+                        <span class="panel-tag">APP</span>
+                    </div>
+                </div>
+                <div class="horizontal-panel" style="background-image: url('images/004.png');">
+                    <div class="horizontal-panel-overlay"></div>
+                    <div class="horizontal-panel-content">
+                        <span class="panel-number">004</span>
+                        <h2 class="panel-title">We push<br />boundaries.</h2>
+                        <p class="panel-desc">Experimental work that explores what's possible at the intersection of design and code.</p>
+                        <span class="panel-tag">LAB</span>
+                    </div>
+                </div>
+                <div class="horizontal-panel" style="background-image: url('images/005.png');">
+                    <div class="horizontal-panel-overlay"></div>
+                    <div class="horizontal-panel-content">
+                        <span class="panel-number">005</span>
+                        <h2 class="panel-title">We deliver<br />results.</h2>
+                        <p class="panel-desc">Every project is built with purpose, precision, and a commitment to excellence.</p>
+                        <span class="panel-tag">IMPACT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 04: PROJECTS — UPDATED            -->
+    <!-- ========================================== -->
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+            <div class="projects-header">
+                <span class="section-number">04</span>
+                <span class="section-label">SELECTED WORK</span>
+                <h2 class="projects-title" id="projects-title">
+                    Projects that<br />
+                    <span class="projects-title-accent">speak for themselves.</span>
+                </h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- CARD C01 — Nova Brand -->
+                <a href="nova-brand.html" class="project-card" data-project="C01">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/C01.jpg" alt="Nova Brand Project">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-code">C01</span>
+                            <span class="project-tag">Brand Identity</span>
+                            <h3 class="project-name">Nova Brand</h3>
+                            <p class="project-desc">Visual identity for a future-forward technology company.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD C02 — Studio Luxe -->
+                <a href="studio-luxe.html" class="project-card" data-project="C02">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/C02.jpg" alt="Studio Luxe Project">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-code">C02</span>
+                            <span class="project-tag">Web Experience</span>
+                            <h3 class="project-name">Studio Luxe</h3>
+                            <p class="project-desc">Premium website experience created for a luxury architecture studio.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD C03 — FieldFlow -->
+                <a href="fieldflow.html" class="project-card" data-project="C03">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/C03.jpg" alt="FieldFlow Project">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-code">C03</span>
+                            <span class="project-tag">Mobile Application</span>
+                            <h3 class="project-name">FieldFlow</h3>
+                            <p class="project-desc">Cross-platform application designed for field operations management.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD C04 — EcoChain -->
+                <a href="ecochain.html" class="project-card" data-project="C04">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/C04.jpg" alt="EcoChain Project">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-code">C04</span>
+                            <span class="project-tag">Digital Platform</span>
+                            <h3 class="project-name">EcoChain</h3>
+                            <p class="project-desc">Sustainability platform connecting data, transparency, and supply chains.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD C05 — Morph Studio -->
+                <a href="morph-studio.html" class="project-card" data-project="C05">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/C05.jpg" alt="Morph Studio Project">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-code">C05</span>
+                            <span class="project-tag">Experimental Lab</span>
+                            <h3 class="project-name">Morph Studio</h3>
+                            <p class="project-desc">Interactive design experiment exploring motion, code, and digital experiences.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD C06 — Neural Studio -->
+                <a href="neural-studio.html" class="project-card" data-project="C06">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/C06.jpg" alt="Neural Studio Project">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-code">C06</span>
+                            <span class="project-tag">Artificial Intelligence</span>
+                            <h3 class="project-name">Neural Studio</h3>
+                            <p class="project-desc">Experimental AI interface exploring the future of human and machine interaction.</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="work.html" class="btn-secondary">
+                    VIEW ALL PROJECTS
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 05: CONTACT                        -->
+    <!-- ========================================== -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-number">05</span>
+                    <span class="section-label">CONTACT</span>
+                    <h2 class="contact-title" id="contact-title">
+                        Let's build<br />
+                        <span class="contact-title-accent">something together.</span>
+                    </h2>
+                    <p class="contact-text">
+                        Have a project in mind? We're always looking for
+                        new challenges and creative collaborations.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">EMAIL</span>
+                            <a href="mailto:Desgin@AltoStudio.co.za" class="contact-detail-value">Desgin@AltoStudio.co.za</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">LOCATION</span>
+                            <span class="contact-detail-value">Johannesburg, SA</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn-primary" style="margin-top: 32px;">
+                        GET IN TOUCH
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+
+                <form class="contact-form" id="contactForm" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" placeholder="Your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="your@email.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" placeholder="Tell us about your project..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        SEND MESSAGE
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/Alto PNG.png" alt="Alto Studio" class="logo-image" />
+                    </a>
+                    <p class="footer-tagline">DIGITAL EXPERIENCE STUDIO</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <span class="footer-col-label">STUDIO</span>
+                        <ul>
+                            <li><a href="studio.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <span class="footer-col-label">CONNECT</span>
+                        <ul>
+                            <li><a href="mailto:Desgin@AltoStudio.co.za">Email</a></li>
+                            <li><a href="https://x.com/altostudiosa" target="_blank" rel="noopener noreferrer">X</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span class="footer-system">ALTO_Studio</span>
+                <span class="footer-copy">© 2026 — All rights reserved.</span>
+                <span class="footer-system">SCROLL TO EXPLORE</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS                                    -->
+    <!-- ========================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer>
+    </script>
+    <script src="js/main.js" defer>
+    </script>
+</body>
+</html>

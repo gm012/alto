@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alto Studio — Web Development</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/service-detail.css" />
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- NAVIGATION                                 -->
+    <!-- ========================================== -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Alto PNG.png" alt="Alto Studio" class="logo-image" />
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- FULL-SCREEN MENU                           -->
+    <!-- ========================================== -->
+    <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Main navigation menu">
+        <div class="menu-overlay-inner">
+            <div class="menu-system">
+                <span class="menu-system-label">ALTO_Studio</span>
+                <span class="menu-system-label">EST. 2026</span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" class="menu-link">HOME</a></li>
+                <li><a href="studio.html" class="menu-link">STUDIO</a></li>
+                <li><a href="services.html" class="menu-link">SERVICES</a></li>
+                <li><a href="work.html" class="menu-link">WORK</a></li>
+                <li><a href="contact.html" class="menu-link">CONTACT</a></li>
+            </ul>
+            <div class="menu-footer">
+                <span class="menu-footer-label">DIGITAL EXPERIENCE STUDIO</span>
+                <span class="menu-footer-label">SCROLL TO EXPLORE</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SECTION 01: IMMERSIVE HERO                 -->
+    <!-- ========================================== -->
+    <section class="service-hero" id="service-hero" data-service="web-development">
+        <div class="service-hero-bg">
+            <div class="service-hero-gradient"></div>
+            <div class="service-hero-noise"></div>
+            <div class="service-hero-particle"></div>
+        </div>
+
+        <div class="service-hero-container">
+            <div class="service-hero-meta">
+                <span class="service-hero-tag">SERVICE</span>
+                <span class="service-hero-number">002</span>
+            </div>
+
+            <div class="service-hero-content">
+                <h1 class="service-hero-title">
+                    <span class="hero-title-line">WEB</span>
+                    <span class="hero-title-line hero-title-accent">DEVELOPMENT</span>
+                </h1>
+                
+                <div class="service-hero-divider"></div>
+                
+                <p class="service-hero-desc">
+                    We build immersive digital experiences that are fast, secure, 
+                    and designed to perform—where every interaction feels intentional.
+                </p>
+                
+                <div class="service-hero-actions">
+                    <a href="contact.html" class="btn-primary btn-large">
+                        START A PROJECT
+                        <span class="btn-arrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-hero-indicator">
+                <span class="hero-indicator-line"></span>
+                <span class="hero-indicator-text">SCROLL TO EXPLORE</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 02: THE PHILOSOPHY                 -->
+    <!-- ========================================== -->
+    <section class="service-philosophy" id="philosophy">
+        <div class="container">
+            <div class="philosophy-grid">
+                <div class="philosophy-label">
+                    <span class="section-number">02</span>
+                    <span class="section-label">PHILOSOPHY</span>
+                </div>
+                
+                <div class="philosophy-content">
+                    <h2 class="philosophy-title">
+                        Great software begins<br />
+                        <span class="philosophy-accent">with understanding people.</span>
+                    </h2>
+                    
+                    <div class="philosophy-text">
+                        <p class="philosophy-paragraph">
+                            Technology is only as good as the experience it enables. We build 
+                            websites and platforms that don't just function—they engage, convert, 
+                            and create lasting impressions.
+                        </p>
+                        <p class="philosophy-paragraph">
+                            Our approach combines technical excellence with a deep understanding 
+                            of user behaviour. Every line of code serves a purpose: to deliver 
+                            experiences that are fast, accessible, and delightful.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 03: WHAT WE DELIVER                -->
+    <!-- ========================================== -->
+    <section class="service-deliverables" id="deliverables">
+        <div class="container">
+            <div class="deliverables-header">
+                <span class="section-number">03</span>
+                <span class="section-label">WHAT WE DELIVER</span>
+                <h2 class="deliverables-title">
+                    Our expertise,<br />
+                    <span class="deliverables-accent">modular.</span>
+                </h2>
+            </div>
+
+            <div class="deliverables-grid">
+                <div class="deliverable-item" data-deliverable="corporate-websites">
+                    <div class="deliverable-content">
+                        <span class="deliverable-number">01</span>
+                        <h3 class="deliverable-name">Corporate Websites</h3>
+                        <p class="deliverable-desc">Professional web presence built for credibility and performance.</p>
+                        <span class="deliverable-icon">→</span>
+                    </div>
+                </div>
+
+                <div class="deliverable-item" data-deliverable="landing-pages">
+                    <div class="deliverable-content">
+                        <span class="deliverable-number">02</span>
+                        <h3 class="deliverable-name">Landing Pages</h3>
+                        <p class="deliverable-desc">Conversion-focused pages designed to capture and engage.</p>
+                        <span class="deliverable-icon">→</span>
+                    </div>
+                </div>
+
+                <div class="deliverable-item" data-deliverable="custom-websites">
+                    <div class="deliverable-content">
+                        <span class="deliverable-number">03</span>
+                        <h3 class="deliverable-name">Custom Websites</h3>
+                        <p class="deliverable-desc">Unique web solutions built from scratch with your brand in mind.</p>
+                        <span class="deliverable-icon">→</span>
+                    </div>
+                </div>
+
+                <div class="deliverable-item" data-deliverable="web-applications">
+                    <div class="deliverable-content">
+                        <span class="deliverable-number">04</span>
+                        <h3 class="deliverable-name">Web Applications</h3>
+                        <p class="deliverable-desc">Interactive applications with complex functionality and workflows.</p>
+                        <span class="deliverable-icon">→</span>
+                    </div>
+                </div>
+
+                <div class="deliverable-item" data-deliverable="cms-development">
+                    <div class="deliverable-content">
+                        <span class="deliverable-number">05</span>
+                        <h3 class="deliverable-name">CMS Development</h3>
+                        <p class="deliverable-desc">Powerful content management systems that make updates simple.</p>
+                        <span class="deliverable-icon">→</span>
+                    </div>
+                </div>
+
+                <div class="deliverable-item" data-deliverable="performance-optimisation">
+                    <div class="deliverable-content">
+                        <span class="deliverable-number">06</span>
+                        <h3 class="deliverable-name">Performance Optimisation</h3>
+                        <p class="deliverable-desc">Speed and efficiency improvements for better user experiences.</p>
+                        <span class="deliverable-icon">→</span>
+                    </div>
+                </div>
+
+                <div class="deliverable-item" data-deliverable="hosting">
+                    <div class="deliverable-content">
+                        <span class="deliverable-number">07</span>
+                        <h3 class="deliverable-name">Hosting</h3>
+                        <p class="deliverable-desc">Reliable hosting solutions tailored to your project's requirements.</p>
+                        <span class="deliverable-icon">→</span>
+                    </div>
+                </div>
+
+                <div class="deliverable-item" data-deliverable="maintenance">
+                    <div class="deliverable-content">
+                        <span class="deliverable-number">08</span>
+                        <h3 class="deliverable-name">Maintenance</h3>
+                        <p class="deliverable-desc">Ongoing support to keep your website secure and performing.</p>
+                        <span class="deliverable-icon">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 04: OUR APPROACH                   -->
+    <!-- ========================================== -->
+    <section class="service-approach" id="approach">
+        <div class="approach-header">
+            <span class="section-number">04</span>
+            <span class="section-label">OUR APPROACH</span>
+            <h2 class="approach-title">
+                A journey of<br />
+                <span class="approach-accent">creative discovery.</span>
+            </h2>
+        </div>
+
+        <div class="approach-timeline">
+            <div class="approach-stage" data-stage="discover">
+                <div class="stage-content">
+                    <span class="stage-number">01</span>
+                    <h3 class="stage-name">Discover</h3>
+                    <p class="stage-desc">We begin with deep listening. Understanding your vision, your audience, and your goals.</p>
+                    <span class="stage-arrow">↓</span>
+                </div>
+            </div>
+
+            <div class="approach-stage" data-stage="research">
+                <div class="stage-content">
+                    <span class="stage-number">02</span>
+                    <h3 class="stage-name">Research</h3>
+                    <p class="stage-desc">Competitive analysis, trend research, and cultural context shape our creative foundation.</p>
+                    <span class="stage-arrow">↓</span>
+                </div>
+            </div>
+
+            <div class="approach-stage" data-stage="design">
+                <div class="stage-content">
+                    <span class="stage-number">03</span>
+                    <h3 class="stage-name">Design</h3>
+                    <p class="stage-desc">Concepts emerge. Iteration begins. We explore multiple directions before refining one.</p>
+                    <span class="stage-arrow">↓</span>
+                </div>
+            </div>
+
+            <div class="approach-stage" data-stage="develop">
+                <div class="stage-content">
+                    <span class="stage-number">04</span>
+                    <h3 class="stage-name">Develop</h3>
+                    <p class="stage-desc">Designs come to life through precise execution and technical craftsmanship.</p>
+                    <span class="stage-arrow">↓</span>
+                </div>
+            </div>
+
+            <div class="approach-stage" data-stage="refine">
+                <div class="stage-content">
+                    <span class="stage-number">05</span>
+                    <h3 class="stage-name">Refine</h3>
+                    <p class="stage-desc">Every detail matters. We polish until everything feels intentional and complete.</p>
+                    <span class="stage-arrow">↓</span>
+                </div>
+            </div>
+
+            <div class="approach-stage" data-stage="launch">
+                <div class="stage-content">
+                    <span class="stage-number">06</span>
+                    <h3 class="stage-name">Launch</h3>
+                    <p class="stage-desc">We deliver, support, and continue to evolve our work beyond the initial release.</p>
+                    <span class="stage-icon">★</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 05: FEATURED WORK                  -->
+    <!-- ========================================== -->
+    <section class="service-featured" id="featured">
+        <div class="container">
+            <div class="featured-header">
+                <span class="section-number">05</span>
+                <span class="section-label">FEATURED WORK</span>
+                <h2 class="featured-title">
+                    Projects that<br />
+                    <span class="featured-accent">prove our craft.</span>
+                </h2>
+            </div>
+
+            <div class="featured-grid">
+                <a href="studio-luxe.html" class="featured-card">
+                    <div class="featured-card-image">
+                        <img src="images/W02.jpg" alt="Studio Luxe" loading="lazy" />
+                        <div class="featured-card-overlay">
+                            <span class="featured-card-tag">Web Experience</span>
+                        </div>
+                    </div>
+                    <div class="featured-card-info">
+                        <h3 class="featured-card-name">Studio Luxe</h3>
+                        <p class="featured-card-desc">Premium website for an architecture studio.</p>
+                    </div>
+                </a>
+
+                <a href="ecochain.html" class="featured-card">
+                    <div class="featured-card-image">
+                        <img src="images/W04.jpg" alt="EcoChain" loading="lazy" />
+                        <div class="featured-card-overlay">
+                            <span class="featured-card-tag">Digital Platform</span>
+                        </div>
+                    </div>
+                    <div class="featured-card-info">
+                        <h3 class="featured-card-name">EcoChain</h3>
+                        <p class="featured-card-desc">Sustainability platform with custom CMS.</p>
+                    </div>
+                </a>
+
+                <a href="nova-brand.html" class="featured-card">
+                    <div class="featured-card-image">
+                        <img src="images/W01.jpg" alt="Nova Brand" loading="lazy" />
+                        <div class="featured-card-overlay">
+                            <span class="featured-card-tag">Web Development</span>
+                        </div>
+                    </div>
+                    <div class="featured-card-info">
+                        <h3 class="featured-card-name">Nova Brand</h3>
+                        <p class="featured-card-desc">Complete web presence for a tech company.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 06: WHY ALTO Studio               -->
+    <!-- ========================================== -->
+    <section class="service-comparison" id="comparison">
+        <div class="container">
+            <div class="comparison-header">
+                <span class="section-number">06</span>
+                <span class="section-label">WHY ALTO</span>
+                <h2 class="comparison-title">
+                    The difference is<br />
+                    <span class="comparison-accent">intentional.</span>
+                </h2>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-column comparison-typical">
+                    <span class="comparison-label">TYPICAL AGENCY</span>
+                    <ul class="comparison-list">
+                        <li class="comparison-item">
+                            <span class="comparison-icon">✕</span>
+                            <span class="comparison-text">Templates and shortcuts</span>
+                        </li>
+                        <li class="comparison-item">
+                            <span class="comparison-icon">✕</span>
+                            <span class="comparison-text">Quick delivery, short-term thinking</span>
+                        </li>
+                        <li class="comparison-item">
+                            <span class="comparison-icon">✕</span>
+                            <span class="comparison-text">Design as decoration</span>
+                        </li>
+                        <li class="comparison-item">
+                            <span class="comparison-icon">✕</span>
+                            <span class="comparison-text">Website first, strategy second</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="comparison-divider">
+                    <span class="divider-text">VS</span>
+                </div>
+
+                <div class="comparison-column comparison-alto">
+                    <span class="comparison-label">ALTO Studio</span>
+                    <ul class="comparison-list">
+                        <li class="comparison-item">
+                            <span class="comparison-icon">✓</span>
+                            <span class="comparison-text comparison-highlight">Custom built from scratch</span>
+                        </li>
+                        <li class="comparison-item">
+                            <span class="comparison-icon">✓</span>
+                            <span class="comparison-text comparison-highlight">Long-term partnership thinking</span>
+                        </li>
+                        <li class="comparison-item">
+                            <span class="comparison-icon">✓</span>
+                            <span class="comparison-text comparison-highlight">Design as strategic communication</span>
+                        </li>
+                        <li class="comparison-item">
+                            <span class="comparison-icon">✓</span>
+                            <span class="comparison-text comparison-highlight">Digital experience that builds brands</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 07: CREATIVE TOOLKIT               -->
+    <!-- ========================================== -->
+    <section class="service-toolkit" id="toolkit">
+        <div class="container">
+            <div class="toolkit-header">
+                <span class="section-number">07</span>
+                <span class="section-label">TOOLKIT</span>
+                <h2 class="toolkit-title">
+                    The tools that<br />
+                    <span class="toolkit-accent">shape our work.</span>
+                </h2>
+            </div>
+
+            <div class="toolkit-grid">
+                <div class="toolkit-item">
+                    <div class="toolkit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M6 8 L16 4 L26 8 L16 12 L6 8Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M6 16 L16 20 L26 16" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M6 24 L16 28 L26 24" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="toolkit-name">HTML5</span>
+                </div>
+
+                <div class="toolkit-item">
+                    <div class="toolkit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="6" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M10 12 L16 18 L22 12" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="toolkit-name">CSS3</span>
+                </div>
+
+                <div class="toolkit-item">
+                    <div class="toolkit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M10 12 L16 20 L22 12" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M10 20 L16 12 L22 20" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="toolkit-name">JavaScript</span>
+                </div>
+
+                <div class="toolkit-item">
+                    <div class="toolkit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 6 L16 12" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 20 L16 26" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M6 16 L12 16" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M20 16 L26 16" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="toolkit-name">React</span>
+                </div>
+
+                <div class="toolkit-item">
+                    <div class="toolkit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="6" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 10 L16 22" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M10 16 L22 16" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="toolkit-name">Node.js</span>
+                </div>
+
+                <div class="toolkit-item">
+                    <div class="toolkit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 6 L8 12 L8 20 L16 26 L24 20 L24 12 L16 6Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 6 L16 26" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M8 12 L24 12" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M8 20 L24 20" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="toolkit-name">PHP</span>
+                </div>
+
+                <div class="toolkit-item">
+                    <div class="toolkit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="10" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M12 14 L20 14" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M12 18 L16 18" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="toolkit-name">MySQL</span>
+                </div>
+
+                <div class="toolkit-item">
+                    <div class="toolkit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M6 16 L16 8 L26 16 L16 24 L6 16Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 8 L16 24" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M6 16 L16 16" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 16 L26 16" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="toolkit-name">Git</span>
+                </div>
+
+                <div class="toolkit-item">
+                    <div class="toolkit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 6 L16 12" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 20 L16 26" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="toolkit-name">GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 08: FAQ                            -->
+    <!-- ========================================== -->
+    <section class="service-faq" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <span class="section-number">08</span>
+                <span class="section-label">QUESTIONS</span>
+                <h2 class="faq-title">
+                    Frequently<br />
+                    <span class="faq-accent">asked questions.</span>
+                </h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How long does a website project take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Typical website projects take 4-8 weeks depending on complexity. We work with you to establish a clear timeline during our initial consultation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you build custom websites or use templates?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We build everything from scratch. No templates, no shortcuts. Every website is custom-designed and developed to meet your specific needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is my website mobile-friendly?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. All our websites are fully responsive and optimized for every device, from desktop to mobile.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you offer ongoing support?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We provide ongoing maintenance and support packages to keep your website secure, updated, and performing at its best.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can you integrate with third-party systems?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We have extensive experience integrating with CRMs, ERPs, payment gateways, and other third-party systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 09: FINAL CTA                      -->
+    <!-- ========================================== -->
+    <section class="service-final-cta" id="service-cta">
+        <div class="final-cta-bg">
+            <div class="final-cta-gradient"></div>
+            <div class="final-cta-noise"></div>
+        </div>
+
+        <div class="container">
+            <div class="final-cta-content">
+                <span class="final-cta-number">09</span>
+                <h2 class="final-cta-title">
+                    Let's Build Something<br />
+                    <span class="final-cta-accent">Extraordinary.</span>
+                </h2>
+                <p class="final-cta-text">
+                    Your digital presence is your most powerful asset. 
+                    Let's build something that performs, engages, and sets you apart 
+                    from the competition.
+                </p>
+                <a href="contact.html" class="btn-primary btn-large">
+                    START YOUR PROJECT
+                    <span class="btn-arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/Alto PNG.png" alt="Alto Studio" class="logo-image" />
+                    </a>
+                    <p class="footer-tagline">DIGITAL EXPERIENCE STUDIO</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <span class="footer-col-label">STUDIO</span>
+                        <ul>
+                            <li><a href="studio.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <span class="footer-col-label">CONNECT</span>
+                        <ul>
+                            <li><a href="mailto:Desgin@AltoStudio.co.za">Email</a></li>
+                    <li><a href="https://x.com/altostudiosa" target="_blank" rel="noopener noreferrer">X</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span class="footer-system">ALTO_Studio</span>
+                <span class="footer-copy">© 2026 — All rights reserved.</span>
+                <span class="footer-system">SCROLL TO EXPLORE</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS                                    -->
+    <!-- ========================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <script>
+        // ============================================
+        // MENU TOGGLE — FIXED
+        // ============================================
+        const menuToggle = document.getElementById('menuToggle');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        if (menuToggle && menuOverlay) {
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                menuOverlay.classList.toggle('active');
+                document.body.style.overflow = menuOverlay.classList.contains('active') ? 'hidden' : '';
+            });
+
+            // Close menu when a link is clicked
+            document.querySelectorAll('.menu-link').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    menuToggle.classList.remove('active');
+                    menuOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Close menu when clicking outside (on the overlay itself)
+            menuOverlay.addEventListener('click', function(e) {
+                if (e.target === menuOverlay) {
+                    menuToggle.classList.remove('active');
+                    menuOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        // ============================================
+        // NAVBAR SCROLL EFFECT
+        // ============================================
+        const nav = document.getElementById('nav');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            // Hide nav on scroll down, show on scroll up
+            if (currentScroll > lastScroll && currentScroll > 300) {
+                nav.classList.add('hidden');
+            } else {
+                nav.classList.remove('hidden');
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // ============================================
+        // FAQ ACCORDION
+        // ============================================
+        document.querySelectorAll('.faq-question').forEach(function(button) {
+            button.addEventListener('click', function() {
+                const item = button.closest('.faq-item');
+                const isActive = item.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(function(faq) {
+                    faq.classList.remove('active');
+                    faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                    button.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // ============================================
+        // GSAP ANIMATIONS
+        // ============================================
+        if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Hero title animation
+            gsap.from('.service-hero-title .hero-title-line', {
+                y: 80,
+                opacity: 0,
+                duration: 1.2,
+                ease: 'power3.out',
+                stagger: 0.15,
+                delay: 0.3
+            });
+
+            gsap.from('.service-hero-desc, .service-hero-divider', {
+                y: 40,
+                opacity: 0,
+                duration: 1,
+                ease: 'power3.out',
+                delay: 0.7
+            });
+
+            gsap.from('.service-hero-actions', {
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                ease: 'power3.out',
+                delay: 0.9
+            });
+
+            // Deliverables
+            gsap.from('.deliverable-item', {
+                scrollTrigger: {
+                    trigger: '.deliverables-grid',
+                    start: 'top 85%',
+                },
+                y: 50,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.06,
+                ease: 'power3.out'
+            });
+
+            // Approach stages
+            gsap.from('.approach-stage', {
+                scrollTrigger: {
+                    trigger: '.approach-timeline',
+                    start: 'top 80%',
+                },
+                y: 60,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.1,
+                ease: 'power3.out'
+            });
+
+            // Featured cards
+            gsap.from('.featured-card', {
+                scrollTrigger: {
+                    trigger: '.featured-grid',
+                    start: 'top 85%',
+                },
+                y: 50,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.12,
+                ease: 'power3.out'
+            });
+
+            // Toolkit items
+            gsap.from('.toolkit-item', {
+                scrollTrigger: {
+                    trigger: '.toolkit-grid',
+                    start: 'top 85%',
+                },
+                y: 40,
+                opacity: 0,
+                duration: 0.6,
+                stagger: 0.04,
+                ease: 'power3.out'
+            });
+
+            // FAQ items
+            gsap.from('.faq-item', {
+                scrollTrigger: {
+                    trigger: '.faq-list',
+                    start: 'top 85%',
+                },
+                y: 30,
+                opacity: 0,
+                duration: 0.6,
+                stagger: 0.08,
+                ease: 'power3.out'
+            });
+
+            // Final CTA
+            gsap.from('.final-cta-content', {
+                scrollTrigger: {
+                    trigger: '.service-final-cta',
+                    start: 'top 80%',
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                ease: 'power3.out'
+            });
+        }
+    </script>
+</body>
+</html>
