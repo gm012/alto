@@ -24,6 +24,99 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/case-study.css" />
+
+    <!-- ====================================================== -->
+    <!-- LIGHT SECTION COLOUR CORRECTION                        -->
+    <!-- ====================================================== -->
+    <style>
+        /*
+        ==========================================================
+        COORDINATE — LIGHT BACKGROUND TYPOGRAPHY
+        ==========================================================
+        Never allow white / neon-lime text to sit on light sections.
+        Dark sections remain untouched.
+        */
+
+        .case-intent,
+        .case-challenge {
+            color: #151515;
+        }
+
+        /* SECTION NUMBERS */
+        .case-intent .case-intent-number,
+        .case-challenge .case-challenge-number {
+            color: #596600 !important;
+        }
+
+        /* SMALL MONO LABELS */
+        .case-intent .case-intent-label,
+        .case-challenge .case-challenge-label {
+            color: #595959 !important;
+        }
+
+        /* MAIN HEADINGS */
+        .case-intent .case-intent-objective,
+        .case-challenge .case-challenge-title {
+            color: #111111 !important;
+        }
+
+        /* BODY COPY */
+        .case-intent .case-intent-text,
+        .case-challenge .case-challenge-text {
+            color: #686868 !important;
+        }
+
+        /* PROJECT DETAIL LABELS */
+        .case-intent .case-intent-detail-label {
+            color: #777777 !important;
+        }
+
+        /* PROJECT DETAIL VALUES */
+        .case-intent .case-intent-detail-value {
+            color: #191919 !important;
+        }
+
+        /* DIVIDERS IF PRESENT */
+        .case-intent .case-intent-detail {
+            border-color: rgba(17, 17, 17, 0.12);
+        }
+
+        /*
+        Extra protection in case global CSS is forcing white.
+        */
+        .case-intent h1,
+        .case-intent h2,
+        .case-intent h3,
+        .case-intent h4,
+        .case-challenge h1,
+        .case-challenge h2,
+        .case-challenge h3,
+        .case-challenge h4 {
+            color: #111111;
+        }
+
+        .case-intent p,
+        .case-challenge p {
+            color: #686868;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .case-intent .case-intent-objective,
+            .case-challenge .case-challenge-title {
+                color: #111111 !important;
+            }
+
+            .case-intent .case-intent-text,
+            .case-challenge .case-challenge-text {
+                color: #696969 !important;
+            }
+
+            .case-intent .case-intent-detail-value {
+                color: #181818 !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -32,20 +125,11 @@
     <!-- NAVIGATION                                 -->
     <!-- ========================================== -->
 
-    <nav
-        class="nav"
-        id="nav"
-        role="navigation"
-        aria-label="Main navigation"
-    >
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
 
         <div class="nav-container">
 
-            <a
-                href="index.html"
-                class="logo"
-                aria-label="Alto Studio Home"
-            >
+            <a href="index.html" class="logo" aria-label="Alto Studio Home">
                 <img
                     src="images/Alto PNG.png"
                     alt="Alto Studio"
@@ -89,47 +173,16 @@
             </div>
 
             <ul class="menu-links">
-
-                <li>
-                    <a href="index.html" class="menu-link">
-                        HOME
-                    </a>
-                </li>
-
-                <li>
-                    <a href="studio.html" class="menu-link">
-                        STUDIO
-                    </a>
-                </li>
-
-                <li>
-                    <a href="services.html" class="menu-link">
-                        SERVICES
-                    </a>
-                </li>
-
-                <li>
-                    <a href="work.html" class="menu-link">
-                        WORK
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html" class="menu-link">
-                        CONTACT
-                    </a>
-                </li>
-
+                <li><a href="index.html" class="menu-link">HOME</a></li>
+                <li><a href="studio.html" class="menu-link">STUDIO</a></li>
+                <li><a href="services.html" class="menu-link">SERVICES</a></li>
+                <li><a href="work.html" class="menu-link">WORK</a></li>
+                <li><a href="contact.html" class="menu-link">CONTACT</a></li>
             </ul>
 
             <div class="menu-footer">
-                <span class="menu-footer-label">
-                    DIGITAL EXPERIENCE STUDIO
-                </span>
-
-                <span class="menu-footer-label">
-                    SCROLL TO EXPLORE
-                </span>
+                <span class="menu-footer-label">DIGITAL EXPERIENCE STUDIO</span>
+                <span class="menu-footer-label">SCROLL TO EXPLORE</span>
             </div>
 
         </div>
@@ -138,13 +191,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 01 — HERO                          -->
+    <!-- HERO                                       -->
     <!-- ========================================== -->
 
-    <section
-        class="case-hero"
-        id="case-hero"
-    >
+    <section class="case-hero" id="case-hero">
 
         <div class="case-hero-bg">
 
@@ -158,27 +208,16 @@
 
         </div>
 
-
         <div class="case-hero-container">
 
             <div class="case-hero-meta">
-
-                <span class="case-hero-code">
-                    C01
-                </span>
-
-                <span class="case-hero-code-secondary">
-                    PROJECT / 001
-                </span>
-
+                <span class="case-hero-code">C01</span>
+                <span class="case-hero-code-secondary">PROJECT / 001</span>
             </div>
-
 
             <div class="case-hero-content">
 
-                <h1 class="case-hero-title">
-                    Coordinate
-                </h1>
+                <h1 class="case-hero-title">Coordinate</h1>
 
                 <span class="case-hero-category">
                     APPLICATION / PRODUCT DESIGN
@@ -190,71 +229,35 @@
                     book and manage.
                 </p>
 
-
                 <div class="case-hero-info">
 
                     <div class="case-hero-info-item">
-
-                        <span class="case-hero-info-label">
-                            CLIENT
-                        </span>
-
-                        <span class="case-hero-info-value">
-                            ALTO Studio
-                        </span>
-
+                        <span class="case-hero-info-label">CLIENT</span>
+                        <span class="case-hero-info-value">ALTO Studio</span>
                     </div>
 
-
                     <div class="case-hero-info-item">
-
-                        <span class="case-hero-info-label">
-                            DISCIPLINE
-                        </span>
-
-                        <span class="case-hero-info-value">
-                            Digital Product
-                        </span>
-
+                        <span class="case-hero-info-label">DISCIPLINE</span>
+                        <span class="case-hero-info-value">Digital Product</span>
                     </div>
 
-
                     <div class="case-hero-info-item">
-
-                        <span class="case-hero-info-label">
-                            YEAR
-                        </span>
-
-                        <span class="case-hero-info-value">
-                            2026
-                        </span>
-
+                        <span class="case-hero-info-label">YEAR</span>
+                        <span class="case-hero-info-value">2026</span>
                     </div>
 
-
                     <div class="case-hero-info-item">
-
-                        <span class="case-hero-info-label">
-                            SERVICES
-                        </span>
-
+                        <span class="case-hero-info-label">SERVICES</span>
                         <span class="case-hero-info-value">
-                            Product Strategy, UI/UX,
-                            App Development
+                            Product Strategy, UI/UX, App Development
                         </span>
-
                     </div>
 
                 </div>
 
             </div>
 
-
-            <div
-                class="case-hero-scroll"
-                aria-hidden="true"
-            >
-
+            <div class="case-hero-scroll" aria-hidden="true">
                 <span class="case-hero-scroll-label">
                     SCROLL TO EXPLORE
                 </span>
@@ -262,7 +265,6 @@
                 <div class="case-hero-scroll-line">
                     <div class="case-hero-scroll-progress"></div>
                 </div>
-
             </div>
 
         </div>
@@ -271,13 +273,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 02 — PROJECT INTENT                -->
+    <!-- PROJECT INTENT                             -->
     <!-- ========================================== -->
 
-    <section
-        class="case-intent"
-        id="case-intent"
-    >
+    <section class="case-intent" id="case-intent">
 
         <div class="container">
 
@@ -285,9 +284,7 @@
 
                 <div class="case-intent-meta">
 
-                    <span class="case-intent-number">
-                        01
-                    </span>
+                    <span class="case-intent-number">01</span>
 
                     <span class="case-intent-label">
                         PROJECT INTENT
@@ -317,56 +314,42 @@
                     <div class="case-intent-details">
 
                         <div class="case-intent-detail">
-
                             <span class="case-intent-detail-label">
                                 CLIENT
                             </span>
-
                             <span class="case-intent-detail-value">
                                 ALTO Studio
                             </span>
-
                         </div>
 
 
                         <div class="case-intent-detail">
-
                             <span class="case-intent-detail-label">
                                 DISCIPLINE
                             </span>
-
                             <span class="case-intent-detail-value">
                                 Digital Product
                             </span>
-
                         </div>
 
 
                         <div class="case-intent-detail">
-
                             <span class="case-intent-detail-label">
                                 YEAR
                             </span>
-
                             <span class="case-intent-detail-value">
                                 2026
                             </span>
-
                         </div>
 
 
                         <div class="case-intent-detail">
-
                             <span class="case-intent-detail-label">
                                 SERVICES
                             </span>
-
                             <span class="case-intent-detail-value">
-                                Product Strategy,
-                                UI/UX,
-                                App Development
+                                Product Strategy, UI/UX, App Development
                             </span>
-
                         </div>
 
                     </div>
@@ -381,63 +364,45 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 03 — PRODUCT SHOWCASE              -->
+    <!-- PRODUCT SHOWCASE                           -->
     <!-- ========================================== -->
 
-    <section
-        class="case-showcase"
-        id="case-showcase"
-    >
+    <section class="case-showcase" id="case-showcase">
 
         <div class="container">
 
             <div class="case-showcase-grid">
-
 
                 <span class="case-showcase-label">
                     01 — PRIMARY EXPERIENCE
                 </span>
 
 
-                <!-- HERO -->
-                <div
-                    class="
-                        case-showcase-image
-                        case-showcase-image-full
-                    "
-                >
-
+                <div class="case-showcase-image case-showcase-image-full">
                     <img
                         src="images/coo01.png"
                         alt="Coordinate product presentation"
                         loading="lazy"
                     />
-
                 </div>
 
 
                 <p class="case-showcase-caption">
-
                     A focused digital product system built
                     around visibility, availability and
                     fast workplace decision-making.
-
                 </p>
 
 
-                <!-- INTERFACE DETAIL -->
                 <div class="case-showcase-row">
 
                     <div class="case-showcase-image">
-
                         <img
                             src="images/coo02.jpg"
                             alt="Coordinate interface detail"
                             loading="lazy"
                         />
-
                     </div>
-
 
                     <div class="case-showcase-row-text">
 
@@ -457,29 +422,19 @@
                 </div>
 
 
-                <!-- RESPONSIVE EXPERIENCE -->
-                <div
-                    class="
-                        case-showcase-image
-                        case-showcase-image-full
-                    "
-                >
-
+                <div class="case-showcase-image case-showcase-image-full">
                     <img
                         src="images/coo03.jpg"
                         alt="Coordinate responsive experience"
                         loading="lazy"
                     />
-
                 </div>
 
 
                 <p class="case-showcase-caption">
-
                     A consistent interface language allows
                     Coordinate to move naturally between
                     mobile, tablet and larger digital environments.
-
                 </p>
 
             </div>
@@ -490,34 +445,24 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 04 — PROCESS                       -->
+    <!-- PROCESS                                    -->
     <!-- ========================================== -->
 
-    <section
-        class="case-process"
-        id="case-process"
-    >
+    <section class="case-process" id="case-process">
 
         <div class="container">
 
             <div class="case-process-header">
 
-                <span class="case-process-number">
-                    02
-                </span>
+                <span class="case-process-number">02</span>
 
-                <span class="case-process-label">
-                    PROCESS
-                </span>
+                <span class="case-process-label">PROCESS</span>
 
                 <h2 class="case-process-title">
-
                     How we brought<br />
-
                     <span class="case-process-accent">
                         the project to life.
                     </span>
-
                 </h2>
 
             </div>
@@ -525,78 +470,44 @@
 
             <div class="case-process-timeline">
 
-
                 <div class="case-process-step">
-
-                    <span class="case-process-step-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Product Strategy
-                    </h3>
-
+                    <span class="case-process-step-number">01</span>
+                    <h3>Product Strategy</h3>
                     <p>
                         Defined the core booking journey,
                         user needs and workplace use cases.
                     </p>
-
                 </div>
 
 
                 <div class="case-process-step">
-
-                    <span class="case-process-step-number">
-                        02
-                    </span>
-
-                    <h3>
-                        UX / UI Direction
-                    </h3>
-
+                    <span class="case-process-step-number">02</span>
+                    <h3>UX / UI Direction</h3>
                     <p>
                         Built a clear interface system across
                         light and dark product states.
                     </p>
-
                 </div>
 
 
                 <div class="case-process-step">
-
-                    <span class="case-process-step-number">
-                        03
-                    </span>
-
-                    <h3>
-                        Cross-platform Build
-                    </h3>
-
+                    <span class="case-process-step-number">03</span>
+                    <h3>Cross-platform Build</h3>
                     <p>
                         Developed the application on a shared
                         codebase for scalable platform delivery.
                     </p>
-
                 </div>
 
 
                 <div class="case-process-step">
-
-                    <span class="case-process-step-number">
-                        04
-                    </span>
-
-                    <h3>
-                        Testing & Refinement
-                    </h3>
-
+                    <span class="case-process-step-number">04</span>
+                    <h3>Testing & Refinement</h3>
                     <p>
                         Tested booking flows, navigation,
                         native branding and interface behaviour.
                     </p>
-
                 </div>
-
 
             </div>
 
@@ -606,13 +517,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 05 — CHALLENGE + SOLUTION          -->
+    <!-- CHALLENGE + SOLUTION                       -->
     <!-- ========================================== -->
 
-    <section
-        class="case-challenge"
-        id="case-challenge"
-    >
+    <section class="case-challenge" id="case-challenge">
 
         <div class="container">
 
@@ -621,9 +529,7 @@
 
                 <div class="case-challenge-block">
 
-                    <span class="case-challenge-number">
-                        03
-                    </span>
+                    <span class="case-challenge-number">03</span>
 
                     <span class="case-challenge-label">
                         THE CHALLENGE
@@ -634,7 +540,6 @@
                     </h3>
 
                     <p class="case-challenge-text">
-
                         Room availability, schedules and booking
                         status are often split across tools or
                         communicated manually.
@@ -643,7 +548,6 @@
                         that gives users enough information to act
                         quickly without turning coordination into
                         another administrative task.
-
                     </p>
 
                 </div>
@@ -651,9 +555,7 @@
 
                 <div class="case-challenge-block">
 
-                    <span class="case-challenge-number">
-                        04
-                    </span>
+                    <span class="case-challenge-number">04</span>
 
                     <span class="case-challenge-label">
                         THE SOLUTION
@@ -664,7 +566,6 @@
                     </h3>
 
                     <p class="case-challenge-text">
-
                         Coordinate combines location selection,
                         room availability, calendar planning,
                         booking confirmation and personal schedules
@@ -672,11 +573,9 @@
 
                         Strong hierarchy and consistent states keep
                         the product understandable at every step.
-
                     </p>
 
                 </div>
-
 
             </div>
 
@@ -686,34 +585,24 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 06 — GALLERY                       -->
+    <!-- GALLERY                                    -->
     <!-- ========================================== -->
 
-    <section
-        class="case-gallery"
-        id="case-gallery"
-    >
+    <section class="case-gallery" id="case-gallery">
 
         <div class="container">
 
             <div class="case-gallery-header">
 
-                <span class="case-gallery-number">
-                    05
-                </span>
+                <span class="case-gallery-number">05</span>
 
-                <span class="case-gallery-label">
-                    GALLERY
-                </span>
+                <span class="case-gallery-label">GALLERY</span>
 
                 <h2 class="case-gallery-title">
-
                     Product<br />
-
                     <span class="case-gallery-accent">
                         moments.
                     </span>
-
                 </h2>
 
             </div>
@@ -721,64 +610,40 @@
 
             <div class="case-gallery-grid">
 
-
-                <!-- GALLERY 01 -->
-                <div
-                    class="
-                        case-gallery-item
-                        case-gallery-item-large
-                    "
-                >
-
+                <div class="case-gallery-item case-gallery-item-large">
                     <img
                         src="images/coo04.jpg"
                         alt="Coordinate gallery 01"
                         loading="lazy"
                     />
-
                 </div>
 
 
-                <!-- GALLERY 02 -->
                 <div class="case-gallery-item">
-
                     <img
                         src="images/coo05.jpg"
                         alt="Coordinate gallery 02"
                         loading="lazy"
                     />
-
                 </div>
 
 
-                <!-- GALLERY 03 -->
                 <div class="case-gallery-item">
-
                     <img
                         src="images/coo06.jpg"
                         alt="Coordinate gallery 03"
                         loading="lazy"
                     />
-
                 </div>
 
 
-                <!-- GALLERY 04 -->
-                <div
-                    class="
-                        case-gallery-item
-                        case-gallery-item-large
-                    "
-                >
-
+                <div class="case-gallery-item case-gallery-item-large">
                     <img
                         src="images/coo07.jpg"
                         alt="Coordinate gallery 04"
                         loading="lazy"
                     />
-
                 </div>
-
 
             </div>
 
@@ -788,13 +653,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 07 — NEXT PROJECT                  -->
+    <!-- NEXT PROJECT                               -->
     <!-- ========================================== -->
 
-    <section
-        class="case-next"
-        id="case-next"
-    >
+    <section class="case-next" id="case-next">
 
         <div class="container">
 
@@ -808,17 +670,9 @@
                     Halden
                 </h2>
 
-                <a
-                    href="halden.html"
-                    class="case-next-link"
-                >
-
+                <a href="halden.html" class="case-next-link">
                     VIEW PROJECT
-
-                    <span class="case-next-arrow">
-                        →
-                    </span>
-
+                    <span class="case-next-arrow">→</span>
                 </a>
 
             </div>
@@ -832,29 +686,20 @@
     <!-- FOOTER                                     -->
     <!-- ========================================== -->
 
-    <footer
-        class="footer"
-        role="contentinfo"
-    >
+    <footer class="footer" role="contentinfo">
 
         <div class="container">
 
             <div class="footer-grid">
 
-
                 <div class="footer-brand">
 
-                    <a
-                        href="index.html"
-                        class="logo"
-                    >
-
+                    <a href="index.html" class="logo">
                         <img
                             src="images/Alto PNG.png"
                             alt="Alto Studio"
                             class="logo-image"
                         />
-
                     </a>
 
                     <p class="footer-tagline">
@@ -866,7 +711,6 @@
 
                 <div class="footer-links">
 
-
                     <div class="footer-col">
 
                         <span class="footer-col-label">
@@ -874,31 +718,10 @@
                         </span>
 
                         <ul>
-
-                            <li>
-                                <a href="studio.html">
-                                    About
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="services.html">
-                                    Services
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="work.html">
-                                    Work
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="contact.html">
-                                    Contact
-                                </a>
-                            </li>
-
+                            <li><a href="studio.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
 
                     </div>
@@ -911,7 +734,6 @@
                         </span>
 
                         <ul>
-
                             <li>
                                 <a href="mailto:design@altostudio.co.za">
                                     Email
@@ -927,11 +749,9 @@
                                     X
                                 </a>
                             </li>
-
                         </ul>
 
                     </div>
-
 
                 </div>
 
@@ -960,6 +780,7 @@
 
 
     <!-- SCRIPTS -->
+
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         defer
@@ -970,11 +791,7 @@
         defer
     ></script>
 
-    <script
-        src="js/case-study.js"
-        defer
-    ></script>
+    <script src="js/case-study.js" defer></script>
 
 </body>
-
 </html>
