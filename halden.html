@@ -19,10 +19,7 @@
 
 
     <!-- FONTS -->
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link
         rel="preconnect"
@@ -37,15 +34,103 @@
 
 
     <!-- CSS -->
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/case-study.css" />
 
-    <link
-        rel="stylesheet"
-        href="css/case-study.css"
-    />
+
+    <!-- ====================================================== -->
+    <!-- LIGHT SECTION COLOUR CORRECTION                        -->
+    <!-- ====================================================== -->
+
+    <style>
+        /*
+        ==========================================================
+        HALDEN — LIGHT BACKGROUND TYPOGRAPHY
+        ==========================================================
+        White and pale-gold typography is reserved for dark areas.
+        */
+
+        .case-intent,
+        .case-challenge {
+            color: #161616;
+        }
+
+        /* SECTION NUMBERS */
+        .case-intent .case-intent-number,
+        .case-challenge .case-challenge-number {
+            color: #8a5918 !important;
+        }
+
+        /* SMALL MONO LABELS */
+        .case-intent .case-intent-label,
+        .case-challenge .case-challenge-label {
+            color: #626262 !important;
+        }
+
+        /* HEADINGS */
+        .case-intent .case-intent-objective,
+        .case-challenge .case-challenge-title {
+            color: #141414 !important;
+        }
+
+        /* BODY */
+        .case-intent .case-intent-text,
+        .case-challenge .case-challenge-text {
+            color: #686868 !important;
+        }
+
+        /* META LABELS */
+        .case-intent .case-intent-detail-label {
+            color: #777777 !important;
+        }
+
+        /* META VALUES */
+        .case-intent .case-intent-detail-value {
+            color: #181818 !important;
+        }
+
+        .case-intent .case-intent-detail {
+            border-color: rgba(17, 17, 17, 0.12);
+        }
+
+        /*
+        Protection from global white typography declarations.
+        */
+        .case-intent h1,
+        .case-intent h2,
+        .case-intent h3,
+        .case-intent h4,
+        .case-challenge h1,
+        .case-challenge h2,
+        .case-challenge h3,
+        .case-challenge h4 {
+            color: #141414;
+        }
+
+        .case-intent p,
+        .case-challenge p {
+            color: #686868;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .case-intent .case-intent-objective,
+            .case-challenge .case-challenge-title {
+                color: #141414 !important;
+            }
+
+            .case-intent .case-intent-text,
+            .case-challenge .case-challenge-text {
+                color: #686868 !important;
+            }
+
+            .case-intent .case-intent-detail-value {
+                color: #181818 !important;
+            }
+
+        }
+    </style>
 
 </head>
 
@@ -113,17 +198,9 @@
 
         <div class="menu-overlay-inner">
 
-
             <div class="menu-system">
-
-                <span class="menu-system-label">
-                    ALTO_Studio
-                </span>
-
-                <span class="menu-system-label">
-                    EST. 2026
-                </span>
-
+                <span class="menu-system-label">ALTO_Studio</span>
+                <span class="menu-system-label">EST. 2026</span>
             </div>
 
 
@@ -180,13 +257,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 01 — HERO                          -->
+    <!-- HERO                                       -->
     <!-- ========================================== -->
 
-    <section
-        class="case-hero"
-        id="case-hero"
-    >
+    <section class="case-hero" id="case-hero">
 
         <div class="case-hero-bg">
 
@@ -202,7 +276,6 @@
 
 
         <div class="case-hero-container">
-
 
             <div class="case-hero-meta">
 
@@ -229,11 +302,9 @@
 
 
                 <p class="case-hero-desc">
-
                     A high-trust digital presence for a
                     specialist building documentation and
                     compliance consultancy.
-
                 </p>
 
 
@@ -286,36 +357,26 @@
                         </span>
 
                         <span class="case-hero-info-value">
-
                             Digital Strategy,
                             UX/UI,
                             Front-end Development
-
                         </span>
 
                     </div>
-
 
                 </div>
 
             </div>
 
 
-            <div
-                class="case-hero-scroll"
-                aria-hidden="true"
-            >
+            <div class="case-hero-scroll" aria-hidden="true">
 
                 <span class="case-hero-scroll-label">
                     SCROLL TO EXPLORE
                 </span>
 
                 <div class="case-hero-scroll-line">
-
-                    <div
-                        class="case-hero-scroll-progress"
-                    ></div>
-
+                    <div class="case-hero-scroll-progress"></div>
                 </div>
 
             </div>
@@ -326,13 +387,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 02 — PROJECT INTENT                -->
+    <!-- PROJECT INTENT                             -->
     <!-- ========================================== -->
 
-    <section
-        class="case-intent"
-        id="case-intent"
-    >
+    <section class="case-intent" id="case-intent">
 
         <div class="container">
 
@@ -355,27 +413,21 @@
                 <div class="case-intent-content">
 
                     <h3 class="case-intent-objective">
-
-                        Translate technical expertise
-                        into digital confidence.
-
+                        Translate technical expertise into digital confidence.
                     </h3>
 
 
                     <p class="case-intent-text">
-
                         Halden operates in a technical environment
-                        where clarity and confidence matter.
-
-                        The website needed to communicate building
+                        where clarity and confidence matter. The
+                        website needed to communicate building
                         documentation, compliance processing and
-                        approval support without overwhelming
-                        the user.
+                        approval support without overwhelming the
+                        user.
 
                         The experience was structured around
-                        credibility, clear information and a
-                        strong architectural visual language.
-
+                        credibility, clear information and a strong
+                        architectural visual language.
                     </p>
 
 
@@ -428,15 +480,12 @@
                             </span>
 
                             <span class="case-intent-detail-value">
-
                                 Digital Strategy,
                                 UX/UI,
                                 Front-end Development
-
                             </span>
 
                         </div>
-
 
                     </div>
 
@@ -450,13 +499,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 03 — SHOWCASE                      -->
+    <!-- SHOWCASE                                   -->
     <!-- ========================================== -->
 
-    <section
-        class="case-showcase"
-        id="case-showcase"
-    >
+    <section class="case-showcase" id="case-showcase">
 
         <div class="container">
 
@@ -464,19 +510,11 @@
 
 
                 <span class="case-showcase-label">
-
                     01 — PRIMARY EXPERIENCE
-
                 </span>
 
 
-                <!-- HERO -->
-                <div
-                    class="
-                        case-showcase-image
-                        case-showcase-image-full
-                    "
-                >
+                <div class="case-showcase-image case-showcase-image-full">
 
                     <img
                         src="images/halden01.png"
@@ -488,16 +526,13 @@
 
 
                 <p class="case-showcase-caption">
-
                     A desktop-first presentation system
                     combining architectural imagery,
                     strong typography and restrained
                     warm metallic accents.
-
                 </p>
 
 
-                <!-- INTERFACE DETAIL -->
                 <div class="case-showcase-row">
 
 
@@ -519,28 +554,19 @@
                         </h3>
 
                         <p>
-
                             Service information was organised
                             into clear visual layers, allowing
                             technical content to remain detailed
                             without making the experience
                             difficult to navigate.
-
                         </p>
 
                     </div>
 
-
                 </div>
 
 
-                <!-- RESPONSIVE EXPERIENCE -->
-                <div
-                    class="
-                        case-showcase-image
-                        case-showcase-image-full
-                    "
-                >
+                <div class="case-showcase-image case-showcase-image-full">
 
                     <img
                         src="images/halden03.jpg"
@@ -552,13 +578,10 @@
 
 
                 <p class="case-showcase-caption">
-
                     Responsive layouts preserve Halden's
                     authority and architectural identity
                     across desktop, tablet and mobile.
-
                 </p>
-
 
             </div>
 
@@ -568,13 +591,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 04 — PROCESS                       -->
+    <!-- PROCESS                                    -->
     <!-- ========================================== -->
 
-    <section
-        class="case-process"
-        id="case-process"
-    >
+    <section class="case-process" id="case-process">
 
         <div class="container">
 
@@ -590,13 +610,10 @@
                 </span>
 
                 <h2 class="case-process-title">
-
                     How we brought<br />
-
                     <span class="case-process-accent">
                         the project to life.
                     </span>
-
                 </h2>
 
             </div>
@@ -616,11 +633,9 @@
                     </h3>
 
                     <p>
-
                         Mapped Halden's services,
                         audience and the information
                         users need before making contact.
-
                     </p>
 
                 </div>
@@ -637,11 +652,9 @@
                     </h3>
 
                     <p>
-
                         Built a restrained architectural
                         system around dark surfaces,
                         warm gold and strong typography.
-
                     </p>
 
                 </div>
@@ -658,11 +671,9 @@
                     </h3>
 
                     <p>
-
                         Structured service, project and
                         contact journeys around clarity
                         and credibility.
-
                     </p>
 
                 </div>
@@ -679,15 +690,12 @@
                     </h3>
 
                     <p>
-
                         Developed the responsive site
                         and refined it across desktop
                         and mobile breakpoints.
-
                     </p>
 
                 </div>
-
 
             </div>
 
@@ -697,13 +705,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 05 — CHALLENGE / SOLUTION          -->
+    <!-- CHALLENGE + SOLUTION                       -->
     <!-- ========================================== -->
 
-    <section
-        class="case-challenge"
-        id="case-challenge"
-    >
+    <section class="case-challenge" id="case-challenge">
 
         <div class="container">
 
@@ -721,24 +726,18 @@
                     </span>
 
                     <h3 class="case-challenge-title">
-
-                        Complex services needed
-                        a clear digital voice.
-
+                        Complex services needed a clear digital voice.
                     </h3>
 
 
                     <p class="case-challenge-text">
-
                         Building documentation and compliance
                         work can become dense quickly.
 
-                        The website needed to explain a
-                        specialist service offering to property
-                        owners and asset professionals while
-                        still feeling contemporary, established
-                        and easy to navigate.
-
+                        The website needed to explain a specialist
+                        service offering to property owners and asset
+                        professionals while still feeling contemporary,
+                        established and easy to navigate.
                     </p>
 
                 </div>
@@ -756,15 +755,11 @@
 
 
                     <h3 class="case-challenge-title">
-
-                        Architecture, clarity
-                        and hierarchy.
-
+                        Architecture, clarity and hierarchy.
                     </h3>
 
 
                     <p class="case-challenge-text">
-
                         We created a responsive web experience
                         that uses strong information hierarchy,
                         focused service messaging and an
@@ -773,11 +768,9 @@
                         Technical subject matter becomes a
                         confident, clear and credible
                         client-facing experience.
-
                     </p>
 
                 </div>
-
 
             </div>
 
@@ -787,13 +780,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 06 — GALLERY                       -->
+    <!-- GALLERY                                    -->
     <!-- ========================================== -->
 
-    <section
-        class="case-gallery"
-        id="case-gallery"
-    >
+    <section class="case-gallery" id="case-gallery">
 
         <div class="container">
 
@@ -809,13 +799,11 @@
                 </span>
 
                 <h2 class="case-gallery-title">
-
                     Digital<br />
 
                     <span class="case-gallery-accent">
                         system.
                     </span>
-
                 </h2>
 
             </div>
@@ -824,13 +812,7 @@
             <div class="case-gallery-grid">
 
 
-                <!-- GALLERY 01 -->
-                <div
-                    class="
-                        case-gallery-item
-                        case-gallery-item-large
-                    "
-                >
+                <div class="case-gallery-item case-gallery-item-large">
 
                     <img
                         src="images/halden04.jpg"
@@ -841,7 +823,6 @@
                 </div>
 
 
-                <!-- GALLERY 02 -->
                 <div class="case-gallery-item">
 
                     <img
@@ -853,7 +834,6 @@
                 </div>
 
 
-                <!-- GALLERY 03 -->
                 <div class="case-gallery-item">
 
                     <img
@@ -865,7 +845,6 @@
                 </div>
 
 
-                <!-- GALLERY 04 -->
                 <div class="case-gallery-item">
 
                     <img
@@ -877,13 +856,7 @@
                 </div>
 
 
-                <!-- GALLERY 05 -->
-                <div
-                    class="
-                        case-gallery-item
-                        case-gallery-item-large
-                    "
-                >
+                <div class="case-gallery-item case-gallery-item-large">
 
                     <img
                         src="images/halden08.jpg"
@@ -893,7 +866,6 @@
 
                 </div>
 
-
             </div>
 
         </div>
@@ -902,13 +874,10 @@
 
 
     <!-- ========================================== -->
-    <!-- SECTION 07 — NEXT PROJECT                  -->
+    <!-- NEXT PROJECT                               -->
     <!-- ========================================== -->
 
-    <section
-        class="case-next"
-        id="case-next"
-    >
+    <section class="case-next" id="case-next">
 
         <div class="container">
 
@@ -926,13 +895,8 @@
                     href="coordinate.html"
                     class="case-next-link"
                 >
-
                     VIEW PROJECT
-
-                    <span class="case-next-arrow">
-                        →
-                    </span>
-
+                    <span class="case-next-arrow">→</span>
                 </a>
 
             </div>
@@ -946,10 +910,7 @@
     <!-- FOOTER                                     -->
     <!-- ========================================== -->
 
-    <footer
-        class="footer"
-        role="contentinfo"
-    >
+    <footer class="footer" role="contentinfo">
 
         <div class="container">
 
@@ -958,10 +919,7 @@
 
                 <div class="footer-brand">
 
-                    <a
-                        href="index.html"
-                        class="logo"
-                    >
+                    <a href="index.html" class="logo">
 
                         <img
                             src="images/Alto PNG.png"
@@ -1027,17 +985,12 @@
                         <ul>
 
                             <li>
-
-                                <a
-                                    href="mailto:design@altostudio.co.za"
-                                >
+                                <a href="mailto:design@altostudio.co.za">
                                     Email
                                 </a>
-
                             </li>
 
                             <li>
-
                                 <a
                                     href="https://x.com/altostudiosa"
                                     target="_blank"
@@ -1045,13 +998,11 @@
                                 >
                                     X
                                 </a>
-
                             </li>
 
                         </ul>
 
                     </div>
-
 
                 </div>
 
@@ -1080,6 +1031,7 @@
 
 
     <!-- SCRIPTS -->
+
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         defer
@@ -1090,10 +1042,7 @@
         defer
     ></script>
 
-    <script
-        src="js/case-study.js"
-        defer
-    ></script>
+    <script src="js/case-study.js" defer></script>
 
 
 </body>
