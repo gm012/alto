@@ -120,7 +120,7 @@ h6 {
     font-weight: 400;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.68);
     display: block;
     margin-bottom: 16px;
 }
@@ -382,7 +382,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.65rem;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.68);
     margin-bottom: 60px;
     padding-bottom: 24px;
     border-bottom: 1px solid var(--line-color);
@@ -440,7 +440,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.65rem;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.82);
     margin-top: 60px;
     padding-top: 24px;
     border-top: 1px solid var(--line-color);
@@ -658,7 +658,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: clamp(0.65rem, 1.5vw, 0.85rem);
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.68);
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
@@ -785,7 +785,7 @@ h6 {
     font-size: clamp(0.85rem, 1.5vw, 1rem);
     font-weight: 300;
     letter-spacing: 0.15em;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.82);
     display: flex;
     gap: 16px;
     align-items: center;
@@ -837,7 +837,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     letter-spacing: 0.2em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.68);
     text-transform: uppercase;
 }
 
@@ -973,7 +973,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.65rem;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.82);
     display: block;
     margin-bottom: 8px;
     transition: color 0.4s ease;
@@ -987,7 +987,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     letter-spacing: 0.15em;
-    color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.82);
     text-transform: uppercase;
     display: block;
     margin-bottom: 12px;
@@ -1014,13 +1014,13 @@ h6 {
 .service-pillar-desc {
     font-size: 0.9rem;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.82);
     margin-bottom: 20px;
     transition: color 0.4s ease;
 }
 
 .service-pillar:hover .service-pillar-desc {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.82);
 }
 
 .service-pillar-icon {
@@ -1121,7 +1121,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.65rem;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.82);
     display: block;
     margin-bottom: 24px;
 }
@@ -1138,7 +1138,7 @@ h6 {
 .horizontal-panel-content .panel-desc {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.82);
     max-width: 400px;
     margin-bottom: 24px;
 }
@@ -1209,7 +1209,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.65rem;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.82);
     margin-bottom: 12px;
 }
 
@@ -1227,7 +1227,7 @@ h6 {
     max-width: 92%;
     font-size: 0.95rem;
     line-height: 1.55;
-    color: rgba(255, 255, 255, 0.72);
+    color: rgba(255, 255, 255, 0.82);
     margin-bottom: 18px;
 }
 
@@ -1371,7 +1371,7 @@ h6 {
 
 .project-desc {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.82);
     line-height: 1.6;
 }
 
@@ -1467,7 +1467,7 @@ h6 {
 /* Description */
 .project-desc {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.82);
     line-height: 1.5;
 }
 
@@ -1536,7 +1536,7 @@ h6 {
 .contact-text {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.82);
     max-width: 400px;
     margin-bottom: 40px;
 }
@@ -1551,7 +1551,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.68);
     display: block;
     margin-bottom: 2px;
 }
@@ -1584,7 +1584,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.68);
     text-transform: uppercase;
 }
 
@@ -1656,7 +1656,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     letter-spacing: 0.15em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.68);
     margin-top: 8px;
 }
 
@@ -1670,7 +1670,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.68);
     text-transform: uppercase;
     display: block;
     margin-bottom: 12px;
@@ -1685,7 +1685,7 @@ h6 {
 
 .footer-col ul li a {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.82);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -1701,7 +1701,7 @@ h6 {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.68);
 }
 
 /* ============================================ */
@@ -1983,7 +1983,7 @@ h6 {
 
     line-height: 1.75;
 
-    color: rgba(255, 255, 255, 0.52);
+    color: rgba(255, 255, 255, 0.82);
 }
 
 
@@ -2331,3 +2331,4 @@ h6 {
         max-width: 100%;
     }
 }
+

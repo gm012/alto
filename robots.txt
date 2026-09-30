@@ -3,4 +3,4 @@ Allow: /
 Disallow: /images/
 Disallow: /assets/
 
-Sitemap: https://www.altoStudio.co/sitemap.xml
+Sitemap: https://altostudio.co.za/sitemap.xml

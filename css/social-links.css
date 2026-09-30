@@ -1,0 +1,15 @@
+/* Shared social links across all page footers. */
+.footer-col .footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    color: rgba(255, 255, 255, 0.82);
+}
+.footer-social-link svg { flex: 0 0 20px; }
+.footer-col .footer-social-link:focus-visible {
+    outline: 2px solid var(--electric-lime, #c8ff00);
+    outline-offset: 4px;
+    border-radius: 2px;
+    color: var(--electric-lime, #c8ff00);
+}

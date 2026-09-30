@@ -152,7 +152,7 @@ body {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     letter-spacing: 0.15em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.68);
     margin-bottom: 40px;
 }
 
@@ -193,7 +193,7 @@ body {
 .contact-hero-desc {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.82);
     max-width: 440px;
     opacity: 0;
     animation: contactFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.6s forwards;
@@ -282,7 +282,7 @@ body {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     letter-spacing: 0.15em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.82);
     text-transform: uppercase;
 }
 
@@ -312,7 +312,7 @@ body {
     font-family: var(--font-mono);
     font-size: 0.55rem;
     letter-spacing: 0.2em;
-    color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.68);
     text-transform: uppercase;
 }
 
@@ -404,7 +404,7 @@ body {
 .contact-brief-desc {
     font-size: 0.95rem;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.82);
     max-width: 340px;
     margin-bottom: 32px;
 }
@@ -482,12 +482,12 @@ body {
     font-family: var(--font-mono);
     font-size: 0.55rem;
     letter-spacing: 0.15em;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.68);
     text-transform: uppercase;
 }
 
 .contact-form-optional {
-    color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.68);
 }
 
 .contact-form-field input,
@@ -524,7 +524,7 @@ body {
 .contact-form-field select {
     appearance: none;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.82);
 }
 
 .contact-form-field select option {
@@ -536,7 +536,7 @@ body {
     font-family: var(--font-mono);
     font-size: 0.55rem;
     letter-spacing: 0.15em;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.68);
     text-transform: uppercase;
     display: block;
     margin-bottom: 12px;
@@ -588,7 +588,7 @@ body {
 
 .contact-form-option-icon {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.82);
     transition: color 0.3s ease;
 }
 
@@ -600,7 +600,7 @@ body {
     font-family: var(--font-body);
     font-size: 0.85rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.82);
     transition: color 0.3s ease;
 }
 
@@ -625,7 +625,7 @@ body {
     font-family: var(--font-mono);
     font-size: 0.55rem;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.68);
 }
 
 /* ============================================ */
@@ -684,7 +684,7 @@ body {
 .contact-direct-desc {
     font-size: 0.95rem;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.82);
     max-width: 440px;
     margin-bottom: 24px;
 }
