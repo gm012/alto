@@ -11,7 +11,13 @@ section[id] { scroll-margin-top: 120px; }
 .menu-toggle { z-index: 10002; position: relative; }
 .nav.menu-open { z-index: 10001; transform: none !important; }
 .menu-overlay { z-index: 10000; }
-.legal-links { display: flex; flex-wrap: wrap; gap: 16px 26px; padding: 28px 0; font-size: 13px; color: #c5c5c5; border-top: 1px solid #333; }
+.legal-links { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px 26px; padding: 28px 0; font-size: 13px; color: #c5c5c5; border-top: 1px solid #333; }
+.footer .footer-brand { width: 100%; max-width: 400px; min-width: 0; }
+.footer .footer-brand .logo { width: 100%; }
+.footer .footer-brand .logo-image { width: 100%; height: auto; }
+.footer .footer-tagline { text-align: center; }
+.footer .footer-grid { margin-bottom: 0; }
+.footer .footer-bottom { padding: 32px 0; }
 .legal-links button { border: 0; background: none; color: inherit; padding: 0; }
 .legal-links a:hover,.legal-links button:hover { color: #c8ff00; }
 .form-notice { font-size: 13px; line-height: 1.7; color: #c8c8c8; margin: 22px 0; }
