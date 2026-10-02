@@ -1,0 +1,36 @@
+Options -Indexes
+DirectoryIndex index.html
+AddType image/webp .webp
+AddType image/svg+xml .svg
+AddType font/woff2 .woff2
+ErrorDocument 404 /404.html
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+ RewriteRule ^\.well-known/acme-challenge/ - [L]
+ RewriteRule (^|/)\. - [F,L]
+ RewriteCond %{HTTPS} !=on [OR]
+ RewriteCond %{HTTP_HOST} ^www\.altostudio\.co\.za$ [NC]
+ RewriteRule ^ https://altostudio.co.za%{REQUEST_URI} [R=301,L]
+ RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+ RewriteRule ^index\.html$ / [R=301,L]
+</IfModule>
+<FilesMatch "(^\.|\.(bak|log|ini|sql|zip|md)$)">
+ Require all denied
+</FilesMatch>
+<IfModule mod_headers.c>
+ Header always set X-Content-Type-Options "nosniff"
+ Header always set Referrer-Policy "strict-origin-when-cross-origin"
+ Header always set X-Frame-Options "SAMEORIGIN"
+ Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+ Header always set Strict-Transport-Security "max-age=2592000" "expr=%{HTTPS} == 'on'"
+ Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-/aQpahbQj5V0SbbjsKGun+f0Go1xtQr3p9A3pbDY5/4=' 'sha256-3ytrF72c1j13mCd8+DremSBD4/L/ny/QcRfUYw/H+ZA=' 'sha256-4o3DEgLI1HJDJHEN/HY7GZTacpVtGPVKUoOw0GLcjGM=' 'sha256-50xpXMlkFfNZe0qhUXqVBOD8QDBDBqM8ZobY6ud4seg=' 'sha256-776cTN6udTDNM3pDmzgtgh/r7DUD77xKXP7WBBGawBo=' 'sha256-7DHEuMURvnqDnEZqOfBegqXO5+BuAICdbvP9FghYga8=' 'sha256-9jch3oaZiZhxlMdRbPD0PwHs6Mg2k9MBXlcqJm6ER1g=' 'sha256-GeuagUH0grMrDgDSELlBdgMjNcqlIeIRhxREB9CTNas=' 'sha256-IdY4iGzPphT+aL9pqk52pctJ9smx9jE/LRqhJezdMnU=' 'sha256-VLxld5VM2oBRFfkn0C5X1yrJ5p16J0d1SfVCF0u+JLQ=' 'sha256-XqRiWwnLy98GJKPCz5ZoQm1jaCqcXK7pZ3wSRSj+0DM=' 'sha256-bEReyS8KtS6RVK3Aj0fgW/2498FeYlMe3apH7nLe/Os=' 'sha256-bc4q0h7hCpE7GJd4S+tuKfJVB5hT7VZL7wOI67wb/vk=' 'sha256-c1FLVqF5EfQxTFAxiwZOWg8V+VFJ3tvaR/QR1sQidSw=' 'sha256-dVgcEWyCDBn2Q4DrFJzes2EnOY2NeKZVzAveGKYwZVc=' 'sha256-do5Q4ZObz1YVjhDOia/on4tInf8wKysXufssa+IhL54=' 'sha256-nCmfcUIs3Ov6qoFx9TPIjx3lHNKKm3NtVsimcciiBdg=' 'sha256-qZT/agYhApo8/wywfbxi2kSNvdJJdwhV/BR+uSEPGpY=' 'sha256-rkueFdD3s899bVoFcSiFaFxwPIRD54Bgi259B0L3/6o=' 'sha256-sAgH29OpKVfv82985nKN8U9or55JgYoEhz6p9Avnuv0=' 'sha256-shQ5BBEvNxMJkkd3cz7goefrTfsh0DjODqRT1qOzzEM=' 'sha256-uwQhREiRJ4a+r5X1iSvYcriCawBBYCB8B3DwRofsPHI=' 'sha256-zOF54wKyI1AWUpZoU2n/dODOR5QC6tupFWsH/8sZfNY=' 'sha256-zaSWCMDli+yXbNRGyer6u1lHLnjBDrvdBiqkqFGAIoE='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+ <FilesMatch "\.(html|css|js)$">
+  Header set Cache-Control "no-cache"
+ </FilesMatch>
+ <FilesMatch "\.(webp|jpg|png|svg|ico|woff2|ttf|mp4)$">
+  Header set Cache-Control "public, max-age=604800"
+ </FilesMatch>
+</IfModule>
+<IfModule mod_deflate.c>
+ AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>

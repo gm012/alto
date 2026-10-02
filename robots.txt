@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /images/
-Disallow: /assets/
+Disallow: /api/
 
 Sitemap: https://altostudio.co.za/sitemap.xml

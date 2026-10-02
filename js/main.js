@@ -601,7 +601,7 @@ ScrollTrigger.config({
     ignoreMobileResize: true
 });
 
-ScrollTrigger.normalizeScroll(true);
+// Native scrolling preserves keyboard and touch behaviour.
 
 // ============================================ //
 // CONSOLE BRANDING                            //

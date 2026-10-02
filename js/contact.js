@@ -153,139 +153,6 @@ gsap.from('.contact-statement-line', {
 });
 
 // ============================================ //
-// PROJECT TYPE SELECTION — FIXED              //
-// ============================================ //
-const options = document.querySelectorAll('.contact-form-option');
-
-// Create a hidden input for project type if it doesn't exist
-let projectTypeInput = document.getElementById('projectType');
-if (!projectTypeInput) {
-    projectTypeInput = document.createElement('input');
-    projectTypeInput.type = 'hidden';
-    projectTypeInput.id = 'projectType';
-    projectTypeInput.name = 'projectType';
-    const form = document.getElementById('contactForm');
-    if (form) {
-        form.appendChild(projectTypeInput);
-    }
-}
-
-options.forEach((option) => {
-    option.addEventListener('click', () => {
-        // Remove active from all
-        options.forEach((o) => o.classList.remove('active'));
-        
-        // Add active to clicked
-        option.classList.add('active');
-        
-        // Get the radio input inside and set its checked state
-        const radio = option.querySelector('input[type="radio"]');
-        if (radio) {
-            radio.checked = true;
-            // Set hidden input value
-            projectTypeInput.value = radio.value;
-        }
-    });
-});
-
-// Also handle radio input changes directly
-document.querySelectorAll('input[name="projectType"]').forEach((radio) => {
-    radio.addEventListener('change', () => {
-        options.forEach((o) => o.classList.remove('active'));
-        const parent = radio.closest('.contact-form-option');
-        if (parent) {
-            parent.classList.add('active');
-            projectTypeInput.value = radio.value;
-        }
-    });
-});
-
-// ============================================ //
-// FORM SUBMISSION                             //
-// ============================================ //
-const contactForm = document.getElementById('contactForm');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
-        const projectType = projectTypeInput ? projectTypeInput.value : '';
-        const timeline = document.getElementById('timeline').value;
-        
-        // Basic validation
-        if (!name || !email || !message || !projectType) {
-            const btn = contactForm.querySelector('.btn-primary');
-            if (btn) {
-                const originalText = btn.innerHTML;
-                btn.innerHTML = '⚠ PLEASE COMPLETE ALL FIELDS';
-                btn.style.background = '#FF6B6B';
-                btn.style.color = '#FFFFFF';
-                
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.style.background = '';
-                    btn.style.color = '';
-                }, 3000);
-            }
-            return;
-        }
-        
-        // Success
-        console.log('Form submitted:', { name, email, projectType, message, timeline });
-        
-        const btn = contactForm.querySelector('.btn-primary');
-        if (btn) {
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '✓ INQUIRY SENT';
-            btn.style.background = '#C8FF00';
-            btn.style.color = '#080808';
-            
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.style.background = '';
-                btn.style.color = '';
-                contactForm.reset();
-                // Reset project type selection
-                options.forEach((o) => o.classList.remove('active'));
-                if (projectTypeInput) projectTypeInput.value = '';
-            }, 3000);
-        }
-    });
-}
-
-// ============================================ //
-// INPUT FOCUS ANIMATIONS                      //
-// ============================================ //
-const formInputs = document.querySelectorAll('.contact-form-group input, .contact-form-group textarea, .contact-form-group select');
-
-formInputs.forEach((input) => {
-    input.addEventListener('focus', () => {
-        const label = input.closest('.contact-form-group').querySelector('label');
-        if (label) {
-            gsap.to(label, {
-                color: '#C8FF00',
-                duration: 0.3,
-                ease: 'expo.out',
-            });
-        }
-    });
-    
-    input.addEventListener('blur', () => {
-        const label = input.closest('.contact-form-group').querySelector('label');
-        if (label) {
-            gsap.to(label, {
-                color: 'rgba(8,8,8,0.3)',
-                duration: 0.3,
-                ease: 'expo.out',
-            });
-        }
-    });
-});
-
-// ============================================ //
 // REFRESH AFTER LOAD                          //
 // ============================================ //
 window.addEventListener('load', () => {
@@ -310,7 +177,7 @@ ScrollTrigger.config({
     ignoreMobileResize: true
 });
 
-ScrollTrigger.normalizeScroll(true);
+// Native scrolling preserves keyboard and touch behaviour.
 
 // ============================================ //
 // LOG CONSOLE                                 //
