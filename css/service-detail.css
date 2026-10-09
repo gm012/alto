@@ -1048,3 +1048,13 @@
         font-size: 0.95rem;
     }
 }
+/* Public project showcases: one or two approved projects. */
+.featured-grid--public { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.featured-grid--public > :only-child { grid-column: 1 / -1; width: 100%; max-width: 640px; justify-self: center; }
+@media (max-width: 768px) {
+    .featured-grid--public { grid-template-columns: minmax(0, 1fr); }
+}
+/* Decorative prompt yields to content on small phones. */
+@media (max-width: 480px) {
+    .service-hero-indicator { display: none; }
+}
