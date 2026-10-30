@@ -25,7 +25,10 @@ foreach (['company','projectType','timeline'] as $key) if (strlen($data[$key]??'
 // digests, never raw IPs or enquiry content. A fresh secret is used every hour.
 $dir=private_dir(); $hour=gmdate('YmdH');$path=$dir.'/rate-'.$hour.'.json';
 $fp=@fopen($path,'c+');
-if (!$fp || !flock($fp,LOCK_EX)) respond(503,['ok'=>false,'message'=>'The form is temporarily unavailable. Please email info@altostudio.co.za.']);
+if (!$fp || !flock($fp,LOCK_EX)) {
+    error_log('ALTO enquiry: unable to open or lock rate-limit storage.');
+    respond(503,['ok'=>false,'code'=>'rate_storage_unavailable','message'=>'The form is temporarily unavailable (reference: storage lock). Please email info@altostudio.co.za.']);
+}
 $state=json_decode(stream_get_contents($fp),true)?:['secret'=>bin2hex(random_bytes(32)),'counts'=>[],'total'=>0];
 $key=hash_hmac('sha256',$_SERVER['REMOTE_ADDR']??'unknown',$state['secret']);
 if (($state['counts'][$key]??0)>=5 || $state['total']>=100) {flock($fp,LOCK_UN);fclose($fp);respond(429,['ok'=>false,'message'=>'Too many enquiries were submitted recently. Please try later or email info@altostudio.co.za.']);}
@@ -37,6 +40,9 @@ $headers=['From'=>'ALTO Studio <info@altostudio.co.za>','Reply-To'=>$email,'MIME
 // xneelo supports the Sendmail alias on Basic hosting and higher.
 // Keep sender/recipient fixed: no user input is placed into shell parameters.
 $sent=@mail('info@altostudio.co.za','ALTO website enquiry',$body,$headers,'-finfo@altostudio.co.za');
-if (!$sent) respond(503,['ok'=>false,'message'=>'Your enquiry could not be sent. Your details are still here. Please try again or email info@altostudio.co.za.']);
+if (!$sent) {
+    error_log('ALTO enquiry: hosting mail transport did not accept the message.');
+    respond(503,['ok'=>false,'code'=>'mail_unavailable','message'=>'Your enquiry could not be sent (reference: mail delivery). Your details are still here. Please try again or email info@altostudio.co.za.']);
+}
 unset($_SESSION['token'],$_SESSION['issued']);
 respond(200,['ok'=>true,'message'=>'Your enquiry has been submitted. Thank you for getting in touch with ALTO Studio.']);

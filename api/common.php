@@ -7,11 +7,24 @@ header('X-Content-Type-Options: nosniff');
 function respond(int $status, array $data): never {
     http_response_code($status); echo json_encode($data); exit;
 }
+function private_storage_path(string $siteRoot): string {
+    $siteRoot = str_replace('\\', '/', $siteRoot);
+    // Xneelo's public_html is a symlink to /usr/www/users/<account>.
+    // Its parent is shared infrastructure, NOT the account's home directory.
+    if (preg_match('~^/usr/wwws?/users/([A-Za-z0-9_-]+)(?:/|$)~', $siteRoot, $match)) {
+        return '/usr/home/' . $match[1] . '/alto-private';
+    }
+    return dirname($siteRoot) . '/alto-private';
+}
 function private_dir(): string {
-    // Outside public_html when /site contents are uploaded into public_html.
-    $dir = dirname(__DIR__, 2) . '/alto-private';
+    $dir = private_storage_path(dirname(__DIR__));
     if (!is_dir($dir) && !@mkdir($dir, 0700, true) && !is_dir($dir)) {
-        respond(503, ['ok'=>false,'message'=>'The form is temporarily unavailable. Please email info@altostudio.co.za.']);
+        error_log('ALTO private storage: unable to create account storage directory.');
+        respond(503, ['ok'=>false,'code'=>'storage_unavailable','message'=>'The form is temporarily unavailable (reference: storage). Please email info@altostudio.co.za.']);
+    }
+    if (!is_writable($dir)) {
+        error_log('ALTO private storage: account storage directory is not writable.');
+        respond(503, ['ok'=>false,'code'=>'storage_unavailable','message'=>'The form is temporarily unavailable (reference: storage). Please email info@altostudio.co.za.']);
     }
     return $dir;
 }
